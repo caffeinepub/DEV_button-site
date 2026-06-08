@@ -1,0 +1,41 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T10:19:46.357Z",
+  "summary": "REQ-1/2/3 appear largely implemented via a single-page App with a prominent \"Click Me\" button, immediate click-count/message feedback, and a consistent emerald/teal Tailwind theme. However, the diff introduces Internet Identity/auth plumbing and backend artifacts that were explicitly non-goals and also adds files in paths the BuildRequest said not to change.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Introduced Internet Identity authentication/provider and identity-aware actor hook despite authentication being a stated non-goal, and despite constraints to not modify files under these specific hook paths (files were added/introduced there).",
+      "reason": "BuildRequest explicitly lists user authentication (Internet Identity) as a non-goal and also constrains changes to specific hook files/paths; the diff adds `useInternetIdentity.ts`, `useActor.ts`, and wires `InternetIdentityProvider` in `main.tsx`.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Added backend canister stub even though backend canister logic is a non-goal for this request.",
+      "reason": "BuildRequest explicitly states backend canister logic or persistent storage are non-goals; diff adds a backend actor file.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    }
+  ],
+  "confidence": 0.72,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/lib/utils.ts",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Build a simple website that includes a button.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-website-that-renders-a-clear-primary-button-on-the-page",
+      "title": "Create a single-page website that renders a clear primary button on the page.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-define-a-simple-button-interaction-when-the-button-is-clicked-show-immediate-on-page-feedback-e-g-increment-a-visible-click-counter-or-display-a-short-confirmation-message",
+      "title": "Define a simple button interaction: when the button is clicked, show immediate on-page feedback (e.g., increment a visible click counter or display a short confirmation message).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-visual-theme-across-the-page-colors-typography-spacing-and-layout-with-a-distinct-style-appropriate-for-a-minimal-landing-page-and-keep-it-consistent",
+      "title": "Apply a coherent visual theme across the page (colors, typography, spacing, and layout) with a distinct style appropriate for a minimal landing page, and keep it consistent.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a basic website page with a button",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Button Site",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,7 @@
+{
+  "frontend/src/App.tsx": "Main application component featuring a single-page layout with a hero section, interactive button with click counter, animated feedback messages, and a stats card that appears after first click.",
+  "frontend/src/components/ui/button.tsx": "Shadcn-ui Button component with variants (default, destructive, outline, secondary, ghost, link) and sizes (sm, default, lg, icon) using class-variance-authority.",
+  "frontend/src/lib/utils.ts": "Utility module exporting the cn() function for merging Tailwind CSS classes using clsx and tailwind-merge.",
+  "frontend/src/index.css": "Global styles with OKLCH-based emerald/teal color system for light and dark modes, custom animations for fade-in and slide-in effects.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Inter font family, OKLCH color tokens, custom border radius values, and animation keyframes."
+}

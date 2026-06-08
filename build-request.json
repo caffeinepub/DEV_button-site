@@ -1,0 +1,74 @@
+{
+  "kind": "build_request",
+  "title": "Simple website with a button",
+  "projectName": "Button Site",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a single-page website that renders a clear primary button on the page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "make a website with a button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Visiting the app loads a single page without errors.",
+        "A prominently styled button is visible without scrolling on a typical laptop viewport.",
+        "The button has an accessible label in English and is reachable via keyboard tab navigation."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Define a simple button interaction: when the button is clicked, show immediate on-page feedback (e.g., increment a visible click counter or display a short confirmation message).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "make a website with a button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Clicking the button updates the UI immediately without a page reload.",
+        "The feedback state is visible near the button and uses English user-facing text."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Apply a coherent visual theme across the page (colors, typography, spacing, and layout) with a distinct style appropriate for a minimal landing page, and keep it consistent.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "make a website with a button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page uses a consistent set of colors and typography (not the default unstyled look).",
+        "The button styling matches the overall theme (hover/focus states included).",
+        "Theme does not rely on blue/purple as the primary palette unless explicitly required (not requested)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/components/ui (compose them instead if needed).",
+    "Do not modify any files in frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, or frontend/src/main.tsx (if present)."
+  ],
+  "nonGoals": [
+    "User authentication (Internet Identity).",
+    "Backend canister logic or persistent storage.",
+    "Multiple pages, routing, or complex navigation."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

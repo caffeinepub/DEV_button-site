@@ -1,0 +1,60 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-single-page-website-that-renders-a-clear-primary-button-on-the-page",
+      "featureTitle": "Create a single-page website that renders a clear primary button on the page.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-define-a-simple-button-interaction-when-the-button-is-clicked-show-immediate-on-page-feedback-e-g-increment-a-visible-click-counter-or-display-a-short-confirmation-message",
+      "featureTitle": "Define a simple button interaction: when the button is clicked, show immediate on-page feedback (e.g., increment a visible click counter or display a short confirmation message).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-coherent-visual-theme-across-the-page-colors-typography-spacing-and-layout-with-a-distinct-style-appropriate-for-a-minimal-landing-page-and-keep-it-consistent",
+      "featureTitle": "Apply a coherent visual theme across the page (colors, typography, spacing, and layout) with a distinct style appropriate for a minimal landing page, and keep it consistent.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

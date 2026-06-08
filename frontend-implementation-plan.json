@@ -1,0 +1,64 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Button Site — Single Page with Themed Primary Button",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Render a single-page layout with a prominently styled, accessible primary button visible without scrolling.",
+      "acceptanceCriteria": [
+        "Visiting the app loads a single page without errors.",
+        "A prominently styled button is visible without scrolling on a typical laptop viewport.",
+        "The button has an accessible label in English and is reachable via keyboard tab navigation."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Create the single-page React UI that centers a hero section and renders one prominent primary action button above the fold (ensure accessible English label and keyboard focus visibility). Use the shadcn-ui Button component to provide consistent button structure and interaction states; verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/ui/button.tsx",
+          "operation": "create",
+          "description": "Add the shadcn-ui Button component implementation (or equivalent wrapper consistent with shadcn-ui conventions) so App can compose it without modifying other files under frontend/src/components/ui. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement a simple click interaction that updates on-page feedback immediately near the button.",
+      "acceptanceCriteria": [
+        "Clicking the button updates the UI immediately without a page reload.",
+        "The feedback state is visible near the button and uses English user-facing text."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add local React state for button interaction (e.g., click counter or confirmation message) and render the feedback text directly near the button; ensure the update happens immediately without reload and uses English text."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Apply a coherent, minimal landing-page visual theme (non-blue/purple primary palette) with consistent typography, spacing, and button hover/focus states.",
+      "acceptanceCriteria": [
+        "Page uses a consistent set of colors and typography (not the default unstyled look).",
+        "The button styling matches the overall theme (hover/focus states included).",
+        "Theme does not rely on blue/purple as the primary palette unless explicitly required (not requested)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Define global theme tokens and base styles to match the Tailwind config (CSS variables for background/foreground/primary, etc.), selecting a non-blue/purple primary palette (e.g., green/teal). Include base typography and spacing defaults so the page does not appear unstyled."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply consistent Tailwind utility classes for layout/typography/spacing that align with the theme, and ensure the primary button includes visible hover and focus states consistent with the overall design (using the shadcn-ui Button component); verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

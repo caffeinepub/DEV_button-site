@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Defines an empty Motoko actor with no methods.",
+  "feature_evidence.json": "Lists feature evidence entries mapping frontend files to implemented UI features and associated components.",
+  "frontend-file-summaries.txt": "Contains prewritten summaries for key frontend source files including App, UI button, utilities, CSS, and Tailwind config.",
+  "frontend/index.css": "Global Tailwind setup with OKLCH color variables, light/dark themes, and base style application.",
+  "frontend/index.html": "HTML entry point providing root mount element and loading the main React script.",
+  "frontend/src/App.tsx": "Main React component implementing hero UI, interactive button with click feedback, and a stats card.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an authenticated or anonymous backend actor and refreshes queries on identity change.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements context and hooks for managing Internet Identity login, state, and persisted identities.",
+  "frontend/src/index.css": "Defines the app’s emerald/teal OKLCH theme, dark mode vars, and animation utility classes.",
+  "frontend/src/lib/utils.ts": "Exports cn() helper to merge Tailwind classes using clsx and tailwind-merge.",
+  "frontend/src/main.tsx": "Renders the app with React Query and Internet Identity providers and loads global styles.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme colors, typography, animations, and enabling plugins.",
+  "project_state.json": "Defines the project's state, listing existing button-related features, a pending new feature request, and metadata such as versions and project details."
+}
